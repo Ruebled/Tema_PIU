@@ -1,0 +1,10 @@
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\bin\Debug\Student_Form.exe.config
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\bin\Debug\Student_Form.exe
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\bin\Debug\Student_Form.pdb
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.csproj.AssemblyReference.cache
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.csproj.SuggestedBindingRedirects.cache
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.Properties.Resources.resources
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.csproj.GenerateResource.cache
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.csproj.CoreCompileInputs.cache
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.exe
+C:\Users\Guest_NoDefault\source\repos\Student_Form\Student_Form\obj\Debug\Student_Form.pdb
