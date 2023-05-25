@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Student_Form")]
+[assembly: AssemblyTitle("DataAdministrationf")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Student_Form")]
+[assembly: AssemblyProduct("DataAdministrationf")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a97bb95e-22f0-41b5-9943-277b7fc2b4b2")]
+[assembly: Guid("247b39e2-3821-40b0-bafd-70e2ded222cb")]
 
 // Version information for an assembly consists of the following four values:
 //

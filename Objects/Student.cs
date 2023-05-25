@@ -1,5 +1,6 @@
 ﻿using Objects.Structuri;
 using Objects.Enumerari;
+using System;
 
 namespace Objects
 {
@@ -29,18 +30,36 @@ namespace Objects
         {
             string[] dateFisier = linieFisier.Split(SEPARATOR_FISIER);
 
-            IdStudent = Convert.ToInt32(dateFisier[ID]);
+            IdStudent = System.Convert.ToInt32(dateFisier[ID]);
             Nume = dateFisier[NUME];
             Prenume = dateFisier[PRENUME];
 
-            setBirthDay(dateFisier[BIRTHDAY], SEPARATOR_BIRTHDAY);
+            SetBirthDay(dateFisier[BIRTHDAY], SEPARATOR_BIRTHDAY);
 
             Specializare = (ProgramStudiu)Enum.Parse(typeof(ProgramStudiu), dateFisier[SPECIALIZARE]);
         }
 
+        public static bool operator ==(Student a, Student b)
+        {
+            if (a.Nume != b.Nume) return false;
+            if (a.Prenume != b.Prenume) return false;
+            //if (a.Birthday != b.Birthday) return false;
+            //if (a.Specializare != b.Specializare) return false;
+            return true;
+
+        }
+        public static bool operator !=(Student a, Student b)
+        {
+            if (a.Nume == b.Nume) return false;
+            if (a.Prenume == b.Prenume) return false;
+            //if (a.Birthday != b.Birthday) return false;
+            //if (a.Specializare == b.Specializare) return false;
+            return true;
+        }
+
         public string ConversieLaSir_Fisier()
         {
-            string birthDay = string.Empty;
+            //string birthDay = string.Empty;
 
             string obiectStudentFisier = string.Format("{2}{0}{3}{0}{4}{0}{5}{1}{6}{1}{7}{0}{8}",
                 SEPARATOR_FISIER,
@@ -57,17 +76,16 @@ namespace Objects
 
         }
 
-        public void setBirthDay(string line, char SEPARATOR)
+        public void SetBirthDay(string line, char SEPARATOR)
         {
             string[] vectorBirthDay = line.Split(SEPARATOR);
 
-            birthDay temp = new birthDay();
-
-            temp.day = vectorBirthDay[0];
-            temp.month = vectorBirthDay[1];
-            temp.year = vectorBirthDay[2];
-
-            Birthday = temp;
+            Birthday = new birthDay()
+            {
+                day = vectorBirthDay[0],
+                month = vectorBirthDay[1],
+                year = vectorBirthDay[2]
+            };
         }
     }
 }

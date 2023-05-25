@@ -1,6 +1,6 @@
 ﻿using Objects;
 using System.Collections;
-using System.Reflection.Metadata.Ecma335;
+using System.IO;
 
 namespace DataAdministration
 {
@@ -40,17 +40,20 @@ namespace DataAdministration
                 while ((linieFisier = streamReader.ReadLine()) != null)
                 {
                     Student student_cit = new Student(linieFisier);
+                    
                     if(student != student_cit)
                     {
                         studenti.Add(student_cit);
                     }
                 }
             }
-
+            Stream streamFisierText = File.Open(numeFisier, FileMode.Truncate);
+            streamFisierText.Close();
             foreach (Student student_temp in studenti)
             {
                 this.AddStudent(student_temp);
             }
+            
         }
 
         public ArrayList GetStudenti()
